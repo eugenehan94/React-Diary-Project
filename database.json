@@ -1,0 +1,34 @@
+{
+  "diaries": [
+    {
+      "id": 1,
+      "title": "No title",
+      "date": "June 28 2021",
+      "entries": "No entries yet"
+    },
+    {
+      "id": 2,
+      "title": "2 No title",
+      "date": "2 June 28 2021",
+      "entries": "2 No entries yet"
+    },
+    {
+      "title": "3 No Title",
+      "date": "3 June 29 2021",
+      "entries": "3 Some test",
+      "id": 3
+    },
+    {
+      "title": "4Title",
+      "date": "2021-06-30",
+      "entries": "4Entries",
+      "id": 4
+    },
+    {
+      "title": "5Title",
+      "date": "2021-06-22",
+      "entries": "5Entries",
+      "id": 5
+    }
+  ]
+}
