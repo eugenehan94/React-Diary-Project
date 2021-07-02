@@ -45,13 +45,14 @@ function App() {
   };
 
   if (loading) {
-    return <p>Data is loading...</p>;
+    return <p className="loading-text">Data is loading...</p>;
   }
 
   const onSubmit = (e) => {
     // e.preventDefault();
-    if (!title) {
-      alert("Please add a diary");
+    if (!title || !date || !entries) {
+      alert("Please complete all input: \n\nTitle \nDate \nEntries");
+      e.preventDefault();
       return;
     }
     addTask({ title, date, entries });
@@ -66,7 +67,7 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Link to="/new_diary">
-            <button className="addButton">Added new entries</button>
+            <button className="Button">Added new entries</button>
           </Link>
           <div className="diary-container">
             {diaries.map((diary, index) => {
@@ -86,37 +87,42 @@ function App() {
         </Route>
 
         <Route path="/new_diary">
-          <h1>New Entry Pages</h1>
           <Link to="/">
-            <button>Back to home</button>
+            <button className="Button">Back to home</button>
           </Link>
-
-          <form onSubmit={onSubmit}>
-            <label>Title</label>
-            <input
-              type="text"
-              placeholder="add title"
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-            ></input>
-
-            <label>Date</label>
-            <input
-              type="date"
-              value={date}
-              onChange={(e) => setDate(e.target.value)}
-            ></input>
-
-            <label>Entries</label>
-            <textarea
-              type="text"
-              placeholder="Entries"
-              value={entries}
-              onChange={(e) => setEntries(e.target.value)}
-            ></textarea>
-
-            <input type="submit" value="Save"></input>
-          </form>
+          <div className="form-container">
+            <form onSubmit={onSubmit}>
+              <div>
+                <label>Title:</label>
+                <input
+                  type="text"
+                  placeholder="Add title"
+                  value={title}
+                  onChange={(e) => setTitle(e.target.value)}
+                ></input>
+              </div>
+              <div>
+                <label>Date:</label>
+                <input
+                  type="date"
+                  value={date}
+                  onChange={(e) => setDate(e.target.value)}
+                ></input>
+              </div>
+              <div>
+                <label>Entries:</label>
+                <textarea
+                  type="text"
+                  placeholder="How are you feeling...?"
+                  value={entries}
+                  onChange={(e) => setEntries(e.target.value)}
+                ></textarea>
+              </div>
+              <div>
+                <input type="submit" value="Save" className="save-btn"></input>
+              </div>
+            </form>
+          </div>
         </Route>
       </Switch>
     </Router>
