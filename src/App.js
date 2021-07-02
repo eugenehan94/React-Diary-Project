@@ -65,18 +65,20 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/">
-          <h1>All Diary Entry</h1>
           <Link to="/new_diary">
-            <button>Added new entries</button>
+            <button className="addButton">Added new entries</button>
           </Link>
-          <div>
+          <div className="diary-container">
             {diaries.map((diary, index) => {
               return (
                 <div>
-                  <h2>{diary.title}</h2>
-                  <h3>{diary.date}</h3>
-                  <p>{diary.entries}</p>
-                  <button onClick={() => deleteTask(diary.id)}>Delete</button>
+                  <div className="titleAndbutton">
+                    <h2>{diary.title}</h2>
+                    <button onClick={() => deleteTask(diary.id)}>Delete</button>
+                  </div>
+                  <h3 className="diary-date">{diary.date}</h3>
+                  <p className="diary-entry">{diary.entries}</p>
+                  <div className="divider"></div>
                 </div>
               );
             })}

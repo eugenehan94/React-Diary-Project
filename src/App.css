@@ -1,0 +1,60 @@
+/* Page where user sees the entries */
+.diary-container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.addButton {
+  font-size: 30px;
+  border: none;
+  background-color: rgb(0, 255, 255);
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  transition: ease 0.5s;
+  padding: 0.5rem;
+}
+.addButton:hover {
+  background-color: rgb(7, 207, 207);
+  color: rgb(255, 255, 255);
+}
+.titleAndbutton {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.titleAndbutton h2 {
+  padding: 0;
+  margin: 0;
+}
+.titleAndbutton button {
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-size: 30px;
+  color: rgb(255, 0, 0);
+  border: none;
+}
+.titleAndbutton button:hover {
+  font-style: italic;
+}
+
+.diary-date {
+  margin: 0;
+  padding: 0;
+}
+.diary-entry {
+  font-size: 20px;
+  text-indent: 2rem;
+}
+.divider {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
