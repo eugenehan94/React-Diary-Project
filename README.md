@@ -1,3 +1,22 @@
+# React Diary Project
+
+A React js project where users can enter and delete entries, similar to a diary. The program asks for a title, date and entry.
+
+The information is stored in a REST API generated using JSON Server.
+
+React Router is used.
+
+*If cloned, please run "npm install," then run the program. Also type "npm run server" to start the server*
+
+## Home Page
+![HomePage](src/screenShot/HomePage.jpg)
+
+
+## Adding Entries Page
+![EntriesPage](src/screenShot/AddingEntries.jpg)
+
+
+-------------------------------------------------------------------------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
