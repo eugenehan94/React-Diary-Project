@@ -1,21 +1,21 @@
 {
   "diaries": [
     {
-      "title": "First Entry",
-      "date": "2021-06-30",
-      "entries": "This is the first entry for my diary program. It will be saved as an API",
+      "title": "First Entry ",
+      "date": "2021-07-03",
+      "entries": "This is the First Entry",
       "id": 1
     },
     {
-      "title": "Second Entry",
-      "date": "2021-06-30",
-      "entries": "Just a second entry to test program",
+      "title": "Second Title",
+      "date": "2021-07-03",
+      "entries": "This is the second entry. Testing if it works",
       "id": 2
     },
     {
-      "title": "A Title for The Third Entry",
-      "date": "2021-07-01",
-      "entries": "Moving forward with this project",
+      "title": "Third Entry",
+      "date": "2021-07-03",
+      "entries": "Some random text to go here",
       "id": 3
     }
   ]
