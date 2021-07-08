@@ -2,7 +2,7 @@
 
 A React js project where users can enter, edit and delete entries, similar to a diary. The program asks for a title, date and entry.
 
-The information is stored in a REST API generated using JSON Server.
+The information is stored and read from a REST API generated using JSON Server.
 
 React Router is used.
 
