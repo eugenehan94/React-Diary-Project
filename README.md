@@ -1,6 +1,6 @@
 # React Diary Project
 
-A React js project where users can enter and delete entries, similar to a diary. The program asks for a title, date and entry.
+A React js project where users can enter, edit and delete entries, similar to a diary. The program asks for a title, date and entry.
 
 The information is stored in a REST API generated using JSON Server.
 
